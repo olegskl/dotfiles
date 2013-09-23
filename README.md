@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-A dotfile collection.
+A collection of dotfiles for personal usage.
