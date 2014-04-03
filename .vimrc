@@ -1,3 +1,6 @@
+" Pathogen
+" execute pathogen#infect()
+
 " Ask VIM to use 256 colors:
 set t_Co=256
 
@@ -30,14 +33,14 @@ set autoindent
 filetype plugin indent on
 
 " Set color scheme:
-colorscheme zenburn
+" colorscheme zenburn
 
 " Turn on syntax highlighting:
 syntax on
 
 " Highlight overlength lines:
-highlight OverLength ctermbg=darkred
-match OverLength /\%81v.\+/
+" highlight OverLength ctermbg=darkred
+" match OverLength /\%81v.\+/
 
 " Automatically reload vimrc when it's saved
 augroup AutoReloadVimRC
