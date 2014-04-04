@@ -22,12 +22,15 @@ ngbp() {
         # Navigate (quietly) to the project directory:
         pushd "$toDir" > /dev/null
 
-        # Force-remove recursively the .git directory:
-        rm -rf .git && \
         # Install local dependencies:
         npm install && \
         bower install && \
-        grunt build
+        # Do the initial build and test:
+        grunt build && \
+        # Force-remove recursively the .git directory:
+        rm -rf .git && \
+        # Empty the changelog file:
+        echo -n > CHANGELOG.md
 
         # Return (quietly) to the original directory:
         popd > /dev/null
