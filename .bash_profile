@@ -11,7 +11,8 @@ export PATH=$homebrew:$PATH
 # helper for ng-boilerplate initialization
 # https://github.com/ngbp/ngbp
 ngbp() {
-    fromRepo=git://github.com/joshdmiller/ng-boilerplate
+    # fromRepo=git://github.com/joshdmiller/ng-boilerplate
+    fromRepo=git://github.com/ngbp/ngbp.git
     toDir=$1
 
     # Update global dependencies:
